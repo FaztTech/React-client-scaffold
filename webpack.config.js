@@ -13,17 +13,23 @@ config = {
     path: path.resolve('dist'),
     filename: 'bundle.js'
   },
+  resolve: {
+    extensions: ['.js', '.jsx']
+  },
   module: {
     rules: [
       {
         test: /\.jsx$/,
-        use: {
-          loader: 'babel-loader'
+        loader: 'babel-loader',
+        exclude: /node_modules/,
+        query: {
+          presets: ['es2015', 'react']
         }
       }
     ]
   },
-  plugins: [HtmlWebpackPluginConfig]
+  plugins: [HtmlWebpackPluginConfig],
+  devtool: 'source-map'
 };
 
 module.exports = config;
