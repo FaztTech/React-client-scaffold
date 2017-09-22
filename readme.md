@@ -7,3 +7,7 @@ this is a scaffold from scratch with React and Webpack
 
 ## Considerations
 - I'm Ignored the bundle.js file on the dist folder
+
+- UserEventCallbacks
+- ComponentState
+- NestedComponents

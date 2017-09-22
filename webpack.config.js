@@ -8,7 +8,7 @@ const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
 });
 
 config = {
-  entry: './app/index.jsx',
+  entry: './NestedComponents/index.jsx',
   output: {
     path: path.resolve('dist'),
     filename: 'bundle.js'
